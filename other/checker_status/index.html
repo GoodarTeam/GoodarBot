@@ -13,10 +13,10 @@
       function main() {
         b.setAttribute("disabled", "");
         s.innerText = '';
-        fetch('/').then(
+        fetch('/').then(() => {
           b.removeAttribute("disabled");
           s.innerText = 'In invisible';
-        );
+        });
       }
     </script>
   </body>

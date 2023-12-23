@@ -12,6 +12,11 @@
       const b = document.getElementById('button');
       function main() {
         b.setAttribute("disabled", "");
+        s.innerText = '';
+        fetch('/').then(
+          b.removeAttribute("disabled");
+          s.innerText = 'In invisible';
+        );
       }
     </script>
   </body>

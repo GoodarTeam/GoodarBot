@@ -11,6 +11,10 @@
       const s = document.getElementById('status');
       const b = document.getElementById('button');
       function main() {
+        if (i.value.replace(" ", '') == '') {
+          s.innerText = 'Error: The field is empty';
+          return;
+        }
         b.setAttribute("disabled", "");
         s.innerText = '';
         fetch('/').then(() => {
